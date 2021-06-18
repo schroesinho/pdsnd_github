@@ -2,7 +2,9 @@ import time
 import calendar
 import pandas as pd
 
-# define potential user input
+# define potential user input - available cities (csvs), months (data in csvs), weekday data (all), show_rows
+# optionality
+
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -62,7 +64,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # load data file into a dataframe
+    # load data file into a data frame
     df = pd.read_csv(CITY_DATA[city])
     print('read_csv done')
 
