@@ -27,7 +27,7 @@ def get_filters():
     city = input("Please choose which city data to analyse. Options are Chicago, New York City, Washington: ").lower()
     cities = list(CITY_DATA.keys())
 
-    # make sure only predefined input is chosen
+    # make sure only predefined input as defined above is chosen
     while not(city in cities):
         city = input("Input is not part of the options Chicago, New York City, Washington, "
                      "Must be a typo as no case sensitivity is applied. Please re-enter city name: ").lower()
